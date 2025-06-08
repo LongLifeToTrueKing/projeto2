@@ -1,0 +1,202 @@
+.loading {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 60px auto;
+}
+
+.js-loading-indicator {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    border-right-color: #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1002;
+    width: 100%;
+    height: 100%;
+}
+
+.js-loading-indicator.double::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.js-loading-indicator.triple::before,
+.js-loading-indicator.triple::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.js-loading-indicator.triple::before {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+.js-loading-indicator.triple::after {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.js-loading-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(128, 128, 128, 0.5);
+}
+
+#loader-div {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    border: none;
+    z-index: 99999;
+    position: fixed;
+    margin-top: 0px;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------- BARS LOADER -----------------------*/
+
+.loader-square {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+}
+
+.loader-square .css-square {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 15px;
+    background: #5873fe;
+    -webkit-box-shadow: 2px 2px 3px 0px black;
+    box-shadow: 2px 2px 3px 0px black;
+}
+
+.loader-square .square1 {
+    left: 100px;
+    -webkit-animation: dominos 1s 0.125s ease infinite;
+    animation: dominos 1s 0.125s ease infinite;
+}
+
+.loader-square .square2 {
+    left: 80px;
+    -webkit-animation: dominos 1s 0.3s ease infinite;
+    animation: dominos 1s 0.3s ease infinite;
+}
+
+.loader-square .square3 {
+    left: 60px;
+    -webkit-animation: dominos 1s 0.425s ease infinite;
+    animation: dominos 1s 0.425s ease infinite;
+}
+
+.loader-square .square4 {
+    left: 40px;
+    -webkit-animation: dominos 1s 0.540s ease infinite;
+    animation: dominos 1s 0.540s ease infinite;
+}
+
+.loader-square .square5 {
+    left: 20px;
+    -webkit-animation: dominos 1s 0.665s ease infinite;
+    animation: dominos 1s 0.665s ease infinite;
+}
+
+.loader-square .square6 {
+    left: 0px;
+    -webkit-animation: dominos 1s 0.79s ease infinite;
+    animation: dominos 1s 0.79s ease infinite;
+}
+
+.loader-square .square7 {
+    left: -20px;
+    -webkit-animation: dominos 1s 0.9s ease infinite;
+    animation: dominos 1s 0.9s ease infinite;
+}
+
+.loader-square .square8 {
+    left: -40px;
+    -webkit-animation: dominos 1s 1s ease infinite;
+    animation: dominos 1s 1s ease infinite;
+}
+
+@keyframes dominos {
+    50% {
+        opacity: 0.7;
+    }
+    75% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    80% {
+        opacity: 1;
+    }
+}

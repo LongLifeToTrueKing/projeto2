@@ -1,0 +1,231 @@
+	@charset "utf-8";
+	/* CSS Document */
+
+	/* Layout */
+
+	/**********************/
+
+	.LinhaPag {
+	    border-top: 0;
+	    height: 1px;
+	    background-image: -webkit-linear-gradient(left, #f0f0f0, #2c85ab, #f0f0f0);
+	    background-image: -moz-linear-gradient(left, #f0f0f0, #2c85ab, #f0f0f0);
+	    background-image: -ms-linear-gradient(left, #f0f0f0, #2c85ab, #f0f0f0);
+	    background-image: -o-linear-gradient(left, #f0f0f0, #2c85ab, #f0f0f0);
+	}
+
+	.MI-icon {
+	    /*color: red;*/
+	    margin-right: 2px;
+	}
+
+	/* Configuracoes Basicas */
+
+	/* Paginacao */
+
+	/**********************/
+
+	.page-item.active .page-link {
+	    background-color: #2280a8;
+	}
+
+	.page-link {
+	    color: #2280a8;
+	}
+
+	/* Menu e Rodape */
+
+	/**********************/
+
+	/* Layout */
+
+	/* DropDown */
+
+	/* Abas */
+
+	/* Rodape */
+
+	.rodape {
+	    height: 50px;
+	    font-size: small;
+	    position: absolute;
+	}
+
+	/* Itens de Formulario */
+
+	/**********************/
+
+	/* Form */
+
+	form {
+	    padding: 10px;
+	}
+
+	#Deb {
+	    text-transform: uppercase;
+	}
+
+	/* Botoes */
+
+	.btn-outline-primary:hover {
+	    background-color: #2c85ab;
+	    border-color: #2c85ab;
+	}
+
+	.btn-outline-primary {
+	    color: #2c85ab;
+	    border-color: #2c85ab;
+	}
+
+	.btn. MI-icon {
+	    float: left;
+	    margin-right: 5px;
+	}
+
+	.InpTab {
+	    width: 100%;
+	    border: none;
+	    background-color: transparent;
+	    text-align: center;
+	}
+
+	#btnIco {
+	    float: left;
+	}
+
+	/* Itens de Tabela*/
+
+	/**********************/
+
+	/* Help */
+
+	.IcoHelpTpCont {
+	    float: right;
+	    color: red;
+	    cursor: pointer;
+	}
+
+	.Tam50 {
+	    width: 50px !important;
+	}
+
+	.Tam70 {
+	    width: 70px !important;
+	}
+
+	.Tam90 {
+	    width: 90px !important;
+	}
+
+	.Tam100 {
+	    width: 100px !important;
+	}
+
+	.Tam120 {
+	    width: 120px !important;
+	}
+
+	.Tam170 {
+	    width: 170px !important;
+	}
+
+	.Tam190 {
+	    width: 190px !important;
+	}
+
+	.Tam210 {
+	    width: 210px !important;
+	}
+
+	.Tam230 {
+	    width: 230px !important;
+	}
+
+	.Tam360 {
+	    width: 360px !important;
+	}
+
+	.InpConta {
+	    border: 1px solid #dee2e6;
+	}
+
+	.InpContaVer {
+	    border: 1px solid red;
+	}
+
+	.BtTab1 {
+	    padding-left: 0px !important;
+	}
+
+	.PHelp {
+	    padding-left: 60px;
+	}
+
+	.slide-me {
+	    position: relative;
+	    left: -70%;
+	    opacity: 0;
+	    margin-left: 15%;
+	    -webkit-animation: slide 0.5s forwards;
+	    animation: slide 0.5s forwards;
+	}
+
+	.slide-me2x {
+	    position: relative;
+	    left: -70%;
+	    opacity: 0;
+	    margin-left: 15%;
+	    -webkit-animation: slide 0.25s forwards;
+	    animation: slide 0.25s forwards;
+	}
+
+	@-webkit-keyframes slide {
+	    100% {
+	        margin-left: 0;
+	        left: 0;
+	        opacity: 100%;
+	    }
+	    75% {
+	        margin-left: 5%;
+	        left: 0;
+	        right: -5%;
+	        opacity: 90%;
+	    }
+	    50% {
+	        left: -20%;
+	        opacity: 75%;
+	    }
+	    25% {
+	        left: -55%;
+	        opacity: 25%;
+	    }
+	}
+
+	@keyframes slide {
+	    100% {
+	        margin-left: 0;
+	        left: 0;
+	        opacity: 100%;
+	    }
+	    75% {
+	        margin-left: 5%;
+	        left: 0;
+	        right: -5%;
+	        opacity: 90%;
+	    }
+	    50% {
+	        left: -20%;
+	        opacity: 75%;
+	    }
+	    25% {
+	        left: -55%;
+	        opacity: 25%;
+	    }
+	}
+
+	hr {
+	    margin-top: 1rem !important;
+	    margin-bottom: 1rem !important;
+	    border: 0 !important;
+	    border-top: 1px solid rgba(0, 0, 0, .1) !important;
+	}
