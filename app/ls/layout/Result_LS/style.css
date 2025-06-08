@@ -1,0 +1,397 @@
+/* Imports */
+
+@import 'https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.min.css';
+@import "../../components/autocomplete/autocomplete.css";
+@import "../../components/speed-dial/speed-dial.min.css";
+@import "../../components/DataTables/datatables.min.css";
+@import "../../components/anno/anno.css";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css";
+@import 'https://portal.ssparisi.com.br/prime/css/tailwind.min.css';
+@import '../../../../assets/css/style.css';
+@import '../../../../css/magic-check.css';
+/* Paginação */
+
+.paginate_button {
+    height: 40px;
+    width: 40px;
+    margin: 0 1px;
+    border-radius: 50%;
+}
+
+.paginate_button.current,
+.paginate_button.current:hover {
+    color: white !important;
+    border: 1px solid #5873fe;
+    background-color: #5873fe;
+}
+
+.paginate_button.page-start,
+.paginate_button.page-end {
+    background-color: #e6e6e6 !important;
+}
+
+.more-prev,
+.more-next {
+    color: #e6e6e6;
+    margin: 0 5px
+}
+
+.no-sorting,
+.asc-sorting,
+.desc-sorting {
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+}
+
+.no-sorting {
+    background-image: url("/prime/app/ls/components/DataTables/sort_both.png");
+}
+
+.asc-sorting {
+    background-image: url("/prime/app/ls/components/DataTables/sort_asc.png");
+}
+
+.desc-sorting {
+    background-image: url("/prime/app/ls/components/DataTables/sort_desc.png");
+}
+
+/* Pesquisa */
+
+#searchInput {
+    width: 30%;
+    border: rgb(173, 173, 173) 1px solid;
+    border-radius: 3px;
+}
+
+#searchButton {
+    height: 32px;
+    margin-left: 3px;
+}
+
+#filterButton {
+    height: 32px;
+    margin-left: 3px;
+}
+
+/* Desmembramento */
+
+.splitHistInput,
+.splitValueInput,
+.splitDebInput,
+.splitCredInput,
+.splitHPInput {
+    font-size: 14px;
+}
+
+/* Outros */
+
+body {
+    overflow: auto !important;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+    background-color: rgb(209, 213, 219) !important;
+    color: white !important;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    left: 30%;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    line-height: 25px !important;
+}
+
+.dataTable tbody td {
+    padding: 3px 10px !important;
+}
+
+.w-3p {
+    width: 3% !important;
+}
+
+.w-4p {
+    width: 4% !important;
+}
+
+.w-5p {
+    width: 5% !important;
+}
+
+.w-6p {
+    width: 6% !important;
+}
+
+.w-7p {
+    width: 7% !important;
+}
+
+.status-td-nonModal {
+    width: 25% !important;
+}
+
+.status-td-nonModal p:first-child {
+    margin-left: 5%;
+}
+
+.crete-round-regular {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#result_dataTable {
+    padding-top: 20px;
+}
+
+#result_dataTable *:not(th,
+button) {
+    font-size: 1rem !important;
+}
+
+th {
+    font-size: 1.125rem !important;
+}
+
+button {
+    background-color: unset;
+}
+
+#fake-div-ano {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5%;
+    width: 100%;
+    height: 1em;
+}
+
+.toast-success {
+    background-color: #51A351 !important;
+}
+
+.toast-error {
+    background-color: #BD362F !important;
+}
+
+.toast-info {
+    background-color: #2F96B4 !important;
+}
+
+#simpleMultiple {
+    width: 20%;
+    margin-left: auto;
+}
+
+thead tr th:last-child {
+    text-align: center;
+}
+
+.doc-input,
+.hist-input,
+.acc-input,
+.doc-input-fiscal {
+    height: 100%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.doc-input-fiscal {
+    width: 65% !important;
+}
+
+.accounts-span input {
+    border-radius: 0;
+}
+
+.accounts-span input:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.accounts-span input:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.tempRecord {
+    position: relative;
+}
+
+.tempRecord:before {
+    position: absolute;
+    content: '';
+    background-color: #FF0000;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    right: -4px;
+    top: -4px;
+}
+
+.modal-open {
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+#ModalInfoPlan {
+    padding: 0 !important;
+}
+
+.modal-content {
+    border-radius: 0.3rem !important;
+}
+
+/* Página de Extrato e comprovante */
+
+.form-extcomp {
+    border-radius: 0.25em;
+    width: fit-content;
+    height: 37px;
+    border-color: #e7e7e7;
+}
+
+.btn-extcomp {
+    border-radius: 0.25em;
+    background-color: #828cff;
+    border: none;
+    height: 37px;
+}
+
+.btn-extcomp:hover {
+    background-color: #5f6cff;
+}
+
+.btn-extcomp-final {
+    /* border-radius: 0.25em;
+   background-color: #5f6cff;
+   border: none;
+   height: 37px; */
+}
+
+.btn-extcomp-final:hover {
+    /* background-color: #2c3cf9; */
+}
+
+.form-input-extcomp {
+    border: none !important;
+    background: transparent !important;
+}
+
+.current-editing td {
+    border: none !important;
+}
+
+.current-editing tr:first-child td {
+    border-top: 5px solid transparent !important;
+}
+
+.current-editing tr:last-child td {
+    border-bottom: 1px solid #373757 !important;
+}
+
+.current-editing tr {
+    background-color: #d9e5ff !important;
+}
+
+.current-editing td {
+    color: #373757 !important;
+}
+
+.current-editing td input {
+    background: transparent;
+    border-color: #373757 !important;
+}
+
+.gradient-title {
+    background: #343957;
+    border: none;
+    font-weight: normal;
+}
+
+.gradient-title:hover {
+    background: #535c93;
+}
+
+.active-title {
+    background: linear-gradient(to right, #5772FE, #6D85FB) !important;
+}
+
+.status {
+    border-right: 1px solid lightgray;
+}
+
+.status p {
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.status-both {
+    background: #f7e379;
+    color: rgb(141 103 54);
+}
+
+.status-one {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.status-ok {
+    color: #0c3560;
+    background-color: #d1f1d2;
+    border-color: #bee5eb;
+}
+
+.status-none {
+    background-color: #e7e7e7;
+}
+
+.isAccordion.off>td,
+.isAccordion.P>td {
+    background-color: rgb(254 252 232) !important;
+}
+
+tr.probable.off>td,
+tr.probable.P>td {
+    background-color: rgb(254 252 232) !important;
+}
+
+.isAccordion.empty>td {
+    background-color: rgb(243 244 246) !important;
+}
+
+.isAccordion.K>td,
+.isAccordion.C>td,
+.isAccordion.N>td {
+    background-color: rgb(240 253 244) !important;
+}
+
+tr.probable.K>td {
+    background-color: rgb(240 253 244) !important;
+}
+
+.confirmConc-disabled {
+    cursor: not-allowed !important;
+}
+
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

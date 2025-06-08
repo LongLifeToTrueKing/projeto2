@@ -1,0 +1,38 @@
+#datepicker,
+#datepicker2,
+#datepicker3 {
+    margin-bottom: 5px !important;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button {
+    height: 32px !important;
+    width: 32px !important;
+    border-radius: 0 !important;
+    border-color: rgb(231, 231, 231) !important;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon {
+    top: 5.5px !important;
+    left: 5.5px !important;
+}
+
+button.cancel {
+    background-color: #fc3228 !important;
+}
+
+button.cancel:hover {
+    background-color: #c13029 !important;
+}
+
+button.confirm {
+    background-color: #3c92fc !important;
+}
+
+button.confirm:hover {
+    background-color: #32629e !important;
+}
+
+.icon-card {
+    font-size: 47px;
+    color: #17a2b8;
+}
